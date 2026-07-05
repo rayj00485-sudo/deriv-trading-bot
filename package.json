@@ -1,0 +1,29 @@
+{
+  "name": "deriv-trading-bot",
+  "version": "1.0.0",
+  "description": "Automated Deriv Options Trading Bot with Martingale Strategy",
+  "type": "module",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "node --watch src/bot.js",
+    "test": "node src/test.js"
+  },
+  "keywords": [
+    "deriv",
+    "trading",
+    "bot",
+    "martingale",
+    "options"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
