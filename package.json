@@ -5,16 +5,23 @@
   "type": "module",
   "main": "src/bot.js",
   "scripts": {
-    "start": "node src/bot.js",
+    "start": "node scripts/start.js",
     "dev": "node --watch src/bot.js",
-    "test": "node src/test.js"
+    "health-check": "node scripts/health-check.js",
+    "performance": "node scripts/performance-report.js",
+    "oauth-setup": "node src/oauth-setup.js",
+    "exchange-token": "node src/exchange-token.js",
+    "get-account": "node src/get-account.js",
+    "refresh-token": "node src/refresh-token.js",
+    "backtest": "node src/backtest.js --run"
   },
   "keywords": [
     "deriv",
     "trading",
     "bot",
     "martingale",
-    "options"
+    "options",
+    "automated-trading"
   ],
   "author": "",
   "license": "MIT",
@@ -24,6 +31,8 @@
     "dotenv": "^16.3.1"
   },
   "engines": {
-    "node": ">=18.0.0"
-  }
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {}
 }
